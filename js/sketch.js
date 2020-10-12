@@ -2,31 +2,26 @@ function setup() {
   // put setup code here to run once
   createCanvas(windowWidth, windowHeight);
 
-  background(180, 60, 220)
+  background (250,10,100)
 
-  rectMode(CENTER);
 }
 
 function draw() {
-  smooth();
-  fill(120);
-  stroke(40,200,100);
-  strokeWeight(10);
-
-  point(mouseX, mouseY);
-
-  noStroke();
   // put drawing code here to run in loop
-  ellipse(300, 500, 150, 150);
+  stroke(10)
+//triangle
+  fill(255,255,255)
+  triangle(100,500,400,60,700,500)
+//iris
+  fill(20,50,100)
+  ellipse(400,360,350,275)
+//pupil
+  fill(random(255),random(255),random(255))
+  ellipse(400,360,100,100)
+//eyelashes
+  stroke(50)
+  line (400,150,400,223)
+  line (350,160,360,230)
+  line (450,160,430,230)
 
-  stroke(100,255,80);
-  strokeWeight(15);
-  fill(50, 20, 120);
-  rect(800,400,200,300);
-
-  strokeWeight(20);
-  noFill();
-  triangle(1200, 50, 1300, 600, 950, 400);
-
-  print(mouseX);
 }
